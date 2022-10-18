@@ -11,6 +11,8 @@
 #define S_LONG 2
 #define S_SHORT 1
 
+#define UNUSED(x) (void)(x)
+
 #include <stdio.h>
 #include <stdarg.h>
 #include <unistd.h>
@@ -58,6 +60,9 @@ int print_reverse(va_list types, char buffer[],
 	int flags, int width, int precision, int size);
 int print_rot13string(va_list types, char buffer[],
 	int flags, int width, int precision, int size);
+
+long int convert_size_number(long int num, int size);
+long int convert_size_unsgnd(unsigned long int num, int size);
 
 int handle_write_char(char c, char buffer[],
 	int flags, int width, int precision, int size);
