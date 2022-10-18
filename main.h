@@ -29,7 +29,6 @@ int is_printable(char);
 int append_hexa_code(char, char[], int);
 int is_digit(char);
 
-/* Funtions to print chars and strings */
 int print_char(va_list types, char buffer[],
 	int flags, int width, int precision, int size);
 int print_string(va_list types, char buffer[],
@@ -37,7 +36,6 @@ int print_string(va_list types, char buffer[],
 int print_percent(va_list types, char buffer[],
 	int flags, int width, int precision, int size);
 
-/* Functions to print numbers */
 int print_int(va_list types, char buffer[],
 	int flags, int width, int precision, int size);
 int print_binary(va_list types, char buffer[],
@@ -53,6 +51,12 @@ int print_hexa_upper(va_list types, char buffer[],
 
 int print_hexa(va_list types, char map_to[],
 char buffer[], int flags, char flag_ch, int width, int precision, int size);
+
+int print_non_printable(va_list types, char buffer[],
+	int flags, int width, int precision, int size);
+
+int print_pointer(va_list types, char buffer[],
+	int flags, int width, int precision, int size);
 
 /**
  * struct fmt - Struct op
