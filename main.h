@@ -21,4 +21,8 @@ int get_width(const char *format, int *i, va_list list);
 int get_precision(const char *format, int *i, va_list list);
 int get_size(const char *format, int *i);
 
+int is_printable(char);
+int append_hexa_code(char, char[], int);
+int is_digit(char);
+
 #endif
