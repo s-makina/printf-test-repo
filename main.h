@@ -9,6 +9,9 @@
 #define F_HASH 8
 #define F_SPACE 16
 
+#define S_LONG 2
+#define S_SHORT 1
+
 #include <stdio.h>
 #include <stdarg.h>
 
